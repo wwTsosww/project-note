@@ -1,0 +1,108 @@
+.nav-profile{
+    display: flex;
+    align-items: center;
+}
+
+.fa-cart-shopping{
+    font-size: 2vw;
+}
+
+.nav-profile-cart{
+    position: relative;
+}
+
+.cartcount{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.modal,
+.modal-bg{
+    width: 45%;
+    height:45%;
+    position: fixed;
+    top: 200px;
+    left: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-page{
+    z-index: 99;
+    min-width: 25vw;
+    max-width: 60vw;
+    max-height: 20vw;
+    overflow: scroll;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+}
+.modaldesc-content{
+    width: 100%;
+    display: flex;
+}
+.modaldesc-detail{
+    margin-left: 20px;
+}
+.modaldesc-img{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.btn.control{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn{ /*กำหนดปุ่มกดซื้อ*/
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    transition: 0.3s;
+}
+.btn-buy{/*กำหนดสีปุ่มซื้อ*/
+    background: red;
+    color: #fff;
+    margin-left:10px;
+}
+.cartlist-items{
+    width: 50vw;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content:space-between ;
+}
+.cartlist-left{
+    display: flex;
+}
+.cartlist-right{
+ display: flex;
+ align-items: center;
+}
+.cartlist-left img{
+    width: 5vw;
+    height: 5vw;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.btnc{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    cursor: pointer;
+}

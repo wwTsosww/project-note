@@ -1,0 +1,274 @@
+<html>
+    <head>
+<title>GUN</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css " rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/gun.webp">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+              <a class="navbar-brand" href="" >GunShop</a>
+              <a class="navbar-brand" href="#">
+            <img src="images/Logogun.jpg" alt="Gun" width="40" height="30">
+          </a>
+      
+          <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Gun.html">GUNS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="Ammo.html">AMMO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="Promotion.html">PROMOTIONS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="Target.html">COUPON</a>
+                    </li>
+                </ul>
+
+                <div class="nav-profile">
+                  <div onclick="openCart()" style="cursor: pointer;" class="nav-profile-cart">
+                <i class="fa-sharp fas fa-cart-shopping"></i>
+              <div id="cartcount" class="cartcount" style="display: none;">
+                0
+              </div>
+            </div>
+            </div>
+          </nav>
+      
+        </div>
+      </div>
+      <div id="modalCart" class="modal" style="display: none;">
+        <div onclick="closeModal()" class="modal-bg"></div>
+        <div class="modal-page">
+          <h2>My cart</h2>
+          <br>
+          <div id="mycart" class="cartlist">
+            </div>
+
+    <div class="btn-control">
+      <button onclick="closeModal()" class="btn">
+        Cancle
+      </button>
+      <button onclick="BuyModal() "class="btn btn-buy">
+        Buy
+      </button>
+    </div>
+  </div>
+    </div>
+              
+          <img src="images/kuy.jpg" width="1363" height="400"/>
+          <center><h1>After making me they break the mold.</h1></center><br><br>
+        <hr>
+<center><h1>Pistol</h1></center>
+<div class="row">
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\1.jpg" alt="ปืนพก" width="300" height="200">
+          <h5 class="card-title"> GLOCK 17 </h5>
+          <p class="card-text">The last model, used from childhood to growing up, Glock 17, an Austrian product that serves both in movies and in real life. No matter what game you will see, this style of gun can be used. With a compact, elegant and unique design with Glock's gun safety system</p>
+          <a href="#" class="btn btn-warning">BUY</a> 52,000.00 ฿
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\2.jpg" alt="ปืนพก" width="300" height="200">
+          <h5 class="card-title">Sig Sauer P320 Compact</h5>
+          <p class="card-text">P320 from Sig Sauer, British national again. The trigger is made to increase the accuracy of shooting more. Ready to use in any situation Similar in shape to the P226, slightly changed the design of the slide. Suitable for target practice and asset protection.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 7,500฿
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\3.jpg" alt="ปืนพก" width="300" height="200">
+          <h5 class="card-title">Heckler & Koch USP Compact</h5>
+          <p class="card-text">
+            The USP Compact is a compact version with a small gun chambered for a variety of 9mm, .40 or .45 ACP (larger cartridges). The gun stands on the floor from the USP family of models with a simple, square shape.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 78,000฿
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\4.jpg" alt="ปืนพก" width="300" height="200">
+          <h5 class="card-title"> Sig Sauer P226 RX</h5>
+          <p class="card-text">P226 from UK From the makers of Sig Sauer, this handgun barrel is often seen in many FPS or TPS shooting games. A gun slide equipped with an aiming aid.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 95,000฿
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<center><h1>Shotgun</h1></center>
+<div class="row">
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\5.jpg" alt="ลูกซอง" width="300" height="200">
+          <h5 class="card-title">Kei-Tec KSG</h5>
+          <p class="card-text">It can be called the best shotgun in the world at this time. It's a pump-action gun with a 12-gauge pictorial barrel. It is manufactured and originated in the United States.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 85,000฿
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;"> 
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\6.jpg" alt="ลูกซอง" width="300" height="200">
+          <h5 class="card-title">SRMARMS model 1216</h5>
+          <p class="card-text">
+            It's a system-operated gun. semiautomatic It has a detachable magazine that fires 16 rounds per reload. The gun is designed to be a lightweight gun. And it is designed to be used legally. to protect yourself from fraudsters.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 87,275฿
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\7.jpg" alt="ลูกซอง" width="300" height="200">
+          <h5 class="card-title">DP12</h5>
+          <p class="card-text">DP12 produced in the United States, how many shots it contains, firing system 12 shots, gun weight 4.2 kg, ammunition can be put in 2 sides, divided into 7 shots on each side, 2 caps in the chamber are 16 shots, equal to the DP12 gun can hold up to 16.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 65,000฿
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\8.jpg" alt="ลูกซอง" width="300" height="200">
+          <h5 class="card-title">Benelli M4</h5>
+          <p class="card-text">Enelli M4 made in Italy, loaded like that, automatic firing system, gun weight 3.82 kg, Benelli M4 gun can hold up to 8 rounds, May 4, 1998, Armament Research Development & Training Center.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 81,000฿
+        </div>
+      </div>
+    </div>
+  </div>
+
+<center><h1>Sniper</h1></center>
+<div class="row">
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\9.jpg" alt="สไนเปอร์" width="300" height="200">
+          <h5 class="card-title">M24 – American</h5>
+          <p class="card-text">M24 sniper rifle of the United States Army, size 7.62 mm, length 1.092 mm, aiming weight 794 grams, sand leg weight 318 grams, magazine 5 shots, bullet speed 853 m / s, effective firing range 800 m, manufactured by Arm Company Company New York America.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 45,000฿
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\10.jpg" alt="ลูกซอง" width="300" height="200">
+          <h5 class="card-title">M110 SR25 – American</h5>
+          <p class="card-text">The SR 25 rifle (Stoner 25 model rifle) was developed by Reed Knight (owner of Knights Firearms Co) and Eugene Stoner (designed the M16 and Stoner 63 rifles among other things) during the 1990s. In essence the SR 25 is an AR. – 15 caliber rifles to shoot 7,62 x51 / Win .308 ammunition has up to 60%.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 35,000฿
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\11.jpg" alt="ลูกซอง" width="300" height="200">
+          <h5 class="card-title"> L42 EnField – British</h5>
+          <p class="card-text">Lee Enfield is a sniper that is measured in one shot only. which is only for experienced snipers. because of the small ammunition and a very loud sound while shooting causing the other party to be able to catch our direction And we will have a difficult solution because we have to change the ammunition to make the second shot as accurate as before.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 18,000฿
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\12.png" alt="ลูกซอง" width="300" height="200">
+          <h5 class="card-title"> M14 – American</h5>
+          <p class="card-text">This gun was used by the US Army in the early days of the Vietnam War, but due to its heavy weight and large ammunition, it was not very portable and had a very powerful version of the last ammunition that was changed to the M-16 and the US Army. Take it back and order to improve the trigger system and the gun body to be lighter.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 8,390฿
+        </div>
+      </div>
+    </div>
+  </div>
+
+<center><h1>Rifle</h1></center>
+<div class="row">
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\13.jpg" alt="ไรเฟิล" width="300" height="200">
+          <h5 class="card-title">Armalite M16</h5>
+          <p class="card-text">To the last model that is enough for children to study red blood or conscripts get familiar with some familiar faces. The M16 has been decommissioned a long time ago. And have been replaced by new guns being produced. With a semi-automatic firing mechanism that fires three shots at a time and one at a time. Long barrel and familiar shaped hood that supports the user's hand.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 35,000฿
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\14.jpg" alt="ลูกซอง" width="300" height="200">
+          <h5 class="card-title">Heckler & Koch G36</h5>
+          <p class="card-text">
+            The G36 from Germany, a half-present, half-futuristic look that long ago made an impression on those who played some shooting games. The user can customize the aiming aid.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 25,500฿
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\15.jpg" alt="ลูกซอง" width="300" height="200">
+          <h5 class="card-title">Accuracy International AS50</h5>
+          <p class="card-text">In critical operations such as stopping convoys or any vehicle, a simple rifle may not be enough. AS50 British sniper rifle with . This size is considered huge) provides devastating power and effective stopping of targets.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 80,000฿
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="width: 38rem; margin: 30px;">
+      <div class="card">
+        <div class="card-body">
+            <img src="images-g\16.jpg" alt="ลูกซอง" width="300" height="200">
+          <h5 class="card-title">IWI Galil ACE</h5>
+          <p class="card-text">Probably have seen each other with the AK family's relaxed shape in the middle of the gun looks similar. But the muzzle or the handle with the new rear end A fire mode adjuster that can be used both from the left side with a thumb. and right side with palm A retractable and uniquely designed fortune teller.</p>
+          <a href="#" class="btn btn-warning">BUY</a> 35,400฿
+        </div>
+      </div>
+    </div>
+  </div>
+        <hr>
+        <div class="contact-me">
+            <center><h2>Contact</h2>
+            <p>Address:
+            ที่อยู่หอ 9 ซ.แจ้งวํฒนะ 26 ต.บางตลาด อ.ปากเกร็ด จ.นนทบุรี 11120 เบอร์โทร 0972403909</p>
+            Contact Online: Facebook-Note Narubet Line-ommoap20</center>
+          </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>
